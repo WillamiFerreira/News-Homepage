@@ -68,7 +68,7 @@ Error generating stack: `+o.message+`
   width: 184px;
   height: 48px;
     
-`,Im="/assets/logo-2ae3d696.svg";function $m(){return J.jsxs(Wo,{padding:"0px 16px",children:[J.jsxs(zm,{children:[J.jsx(Yi,{imgURL:Im,width:"48px"}),J.jsx(Yi,{imgURL:"../src/assets/images/icon-menu.svg",width:"42px"})]}),J.jsxs(Wo,{gap:"32px 0",padding:"32px 0",children:[J.jsx(Pm,{imgURL:"../src/assets/images/image-web-3-mobile.jpg"}),J.jsxs(Wo,{children:[J.jsxs("article",{children:[J.jsx("h1",{children:"The Bright Future of Web 3.0 ?"}),J.jsx("p",{children:"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"})]}),J.jsx(Lm,{children:"read more"})]})]})]})}const Om=Cm`
+`,Im="/assets/logo-2ae3d696.svg",$m="/assets/icon-menu-09147dcd.svg",Om="/assets/image-web-3-mobile-83b3ba87.jpg";function Dm(){return J.jsxs(Wo,{padding:"0px 16px",children:[J.jsxs(zm,{children:[J.jsx(Yi,{imgURL:Im,width:"48px"}),J.jsx(Yi,{imgURL:$m,width:"42px"})]}),J.jsxs(Wo,{gap:"32px 0",padding:"32px 0",children:[J.jsx(Pm,{imgURL:Om}),J.jsxs(Wo,{children:[J.jsxs("article",{children:[J.jsx("h1",{children:"The Bright Future of Web 3.0 ?"}),J.jsx("p",{children:"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"})]}),J.jsx(Lm,{children:"read more"})]})]})]})}const Mm=Cm`
     * {
         margin: 0;
         padding: 0;
@@ -77,4 +77,4 @@ Error generating stack: `+o.message+`
     body {
         font-family: 'Roboto', sans-serif;
     }
-`;Qo.createRoot(document.getElementById("root")).render(J.jsxs(Ze.StrictMode,{children:[J.jsx(Om,{}),J.jsx($m,{})]}));
+`;Qo.createRoot(document.getElementById("root")).render(J.jsxs(Ze.StrictMode,{children:[J.jsx(Mm,{}),J.jsx(Dm,{})]}));

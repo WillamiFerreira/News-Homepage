@@ -2,7 +2,10 @@ import { ImageContainer, BannerContainer } from "./components/ImageContainer/Ima
 import {Navbar} from "./components/navbar/Navbar"
 import { Wrapper } from "./components/wrapper/Wrapper"
 import { Buttom } from "./components/Buttom/Buttom"
+
 import logo from "../src/assets/images/logo.svg"
+import hamburgerButton from "../src/assets/images/icon-menu.svg"
+import bannerMobile from "../src/assets/images/image-web-3-mobile.jpg"
 
 function App() {
 
@@ -10,10 +13,10 @@ function App() {
     <Wrapper padding='0px 16px'>
       <Navbar>
         <ImageContainer imgURL={logo} width='48px' />
-        <ImageContainer imgURL='../src/assets/images/icon-menu.svg' width='42px' />
+        <ImageContainer imgURL={hamburgerButton} width='42px' />
       </Navbar>
       <Wrapper gap='32px 0' padding='32px 0'>
-      <BannerContainer imgURL='../src/assets/images/image-web-3-mobile.jpg' />
+      <BannerContainer imgURL={bannerMobile} />
       <Wrapper>
         <article>
           <h1>The Bright Future of Web 3.0 ?</h1>
