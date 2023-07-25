@@ -21,5 +21,5 @@ export const ImageContainer = styled(LogicalImageContainer)`
 
 export const BannerContainer = styled(ImageContainer)`
     width: 100%;
-    
+   
 `
