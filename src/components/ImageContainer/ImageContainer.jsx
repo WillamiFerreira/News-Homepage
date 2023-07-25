@@ -12,8 +12,7 @@ function LogicalImageContainer({imgURL, className, label}){
 export const ImageContainer = styled(LogicalImageContainer)`
     display: flex;
     align-items: center;
-    width: ${props => props.width || "100px"};
-
+    width: ${props => props.width || "100px" };
     img{
         width: 100%;
         height: 100%;

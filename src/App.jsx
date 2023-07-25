@@ -9,7 +9,7 @@ function App() {
     <Wrapper padding='0px 16px'>
       <Navbar>
         <ImageContainer imgURL='../src/assets/images/logo.svg' width='48px' />
-        <ImageContainer imgURL='../src/assets/images/icon-menu.svg' width='48px'  />
+        <ImageContainer imgURL='../src/assets/images/icon-menu.svg' width='42px' />
       </Navbar>
       <Wrapper gap='32px 0' padding='32px 0'>
       <BannerContainer imgURL='../src/assets/images/image-web-3-mobile.jpg' />
