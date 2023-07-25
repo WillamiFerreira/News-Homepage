@@ -10,7 +10,15 @@ function LogicalWrapper({children, className}) {
 
 
 export const Wrapper = styled(LogicalWrapper)`
+
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
     gap: ${props => props.gap};
-    padding: ${props => props.padding}
+    padding: ${props => props.padding};
+
+    & button{
+        align-self: center;
+    }
+
 `
