@@ -10,6 +10,7 @@ import news from "./assets/news.json"
 import logo from "../src/assets/images/logo.svg"
 import hamburgerButton from "../src/assets/images/icon-menu.svg"
 import bannerMobile from "../src/assets/images/image-web-3-mobile.jpg"
+import Articles from "./components/article/Articles"
 
 function App() {
 
@@ -43,17 +44,7 @@ function App() {
           ))}
         </Wrapper>
 
-        <Wrapper>  {/*articles Container */}
-          {articles.articles.map(article => (
-              <ArticleItem key={article.id}>
-                <ImageContainer imgURL={article.url} />
-                <article>
-                  <h3>{article.title}</h3>
-                  <p>{article.preview}</p>
-                </article>
-              </ArticleItem>
-            ))}
-        </Wrapper>
+        <Articles/>
       </Wrapper>
 
     </Wrapper>

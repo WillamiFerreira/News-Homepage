@@ -1,11 +1,11 @@
-{
 
-    "articles" : [
+
+    [
         {
             "id": 0,
             "title": "reviving retro PCs",
             "preview": "What happens when old PCs are given modern upgrades?",
-            "url": "https://lh3.googleusercontent.com/pw/AIL4fc8duOPZWJ1C7XSrwniA5TZv9W36NHskMCZAUwfpnDi2roXo6z18i0cCk2P2bUNgYE9FUXK5shnSviUXlcI_LxKGZVuAojamoPrmsv25pjqEoiDAJnuLFDDtxxL3SyuS2M3Vr41UqbTpEs7rL7aw1aSIOg=w200-h254-s-no?authuser=0",
+            "url": "https://lh3.googleusercontent.com/pw/AIL4fc_ywdETcRdPiQpKJRYCI-YOujJB_5AdBygU1_3EO5vQgErA7Er4Hd4IRdkgsgPoNF7ikB3Q0N45em1FxJMQcldSnpBtN4LUaDE8bZhRFpDu7HbTR0AU8ODUWBRDf9xY8_ZLiPgsC3-8hy3cQXCPoKjCVQ=w200-h254-s-no?authuser=0",
             "alt": "Revinving Retro PCs thumbnail" 
 
         },
@@ -21,12 +21,12 @@
             "id": 2,
             "title": "the growth of gaming",
             "preview": "How the pandemic has sparcked fresh opportunities.",
-            "url": "https://lh3.googleusercontent.com/pw/AIL4fc_DdcV1CVzPE_MGYiocGYhVphH6PYq7WtO8ZpmaEmmeZiVBqL64fYC7pUgynS83gC53uJPK4nzsqc1ZfaFRZVDtGca0oVIpYscrYkB7zHYpeRmUl2w3WDiM4Fn9r3fsS5W57JDVX0EwuWBZKeaU8ZOGjQ=w200-h254-s-no?authuser=0",
+            "url": "https://lh3.googleusercontent.com/pw/AIL4fc9wWJ8n3F1QRpQO1rB6LTnLTttq8s9AcTW6IKEpAcd3pxYAY1TMRKuYHInkDyKuT5qkhhkR3u8D3BcVVKAkyBm84eUqfJyxO8oP7IH30lX0AYjcDvFOUDVQCk2K7-dq9NJVe4xp4uxV2IZmpPG9hldGVw=w200-h254-s-no?authuser=0",
             "alt": "The growth of game thumbnail" 
 
         }
+        
 
-    ]
+    ]   
 
 
-}
