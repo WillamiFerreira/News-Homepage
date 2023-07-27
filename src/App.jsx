@@ -5,7 +5,7 @@ import { Wrapper } from "./components/wrapper/Wrapper"
 import { Buttom } from "./components/Buttom/Buttom"
 import Hero from "./components/hero/Hero"
 
-import articles from "./assets/articles"
+//import articles from "./assets/articles"
 import news from "./assets/news.json"
 
 import logo from "../src/assets/images/logo.svg"
