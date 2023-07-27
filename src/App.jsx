@@ -3,6 +3,7 @@ import { ArticleItem } from "./components/ArticleItem/ArticleItem"
 import {Navbar} from "./components/navbar/Navbar"
 import { Wrapper } from "./components/wrapper/Wrapper"
 import { Buttom } from "./components/Buttom/Buttom"
+import Hero from "./components/hero/Hero"
 
 import articles from "./assets/articles"
 import news from "./assets/news.json"
@@ -22,7 +23,8 @@ function App() {
       </Navbar>
 
       <Wrapper gap='32px' padding='32px 0'>{/* Wrapper Central */}
-        <BannerContainer imgURL={bannerMobile} />
+        {/*<BannerContainer imgURL={bannerMobile} />*/}
+        <Hero/>
 
         <Wrapper> {/*main info container*/}
           <article>
