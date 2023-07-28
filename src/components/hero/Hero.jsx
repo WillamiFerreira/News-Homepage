@@ -6,9 +6,9 @@ import {
     HeroImageStyled
 }from './HeroStyled'
 
-function Hero(){
+function Hero({id}){
     return(
-        <HeroStyled>
+        <HeroStyled id={id}>
             <source media="(min-width: 768px)" srcSet={largeHero} />
             <HeroImageStyled src={tinyHero}/>
         </HeroStyled>

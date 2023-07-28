@@ -7,6 +7,7 @@ export const MainNewStyled = styled.div`
     display: flex;
     flex-direction: column;
     padding: 8px;
+    grid-area: uniquenew;
     
     & > span{
         border: 1px solid blue;

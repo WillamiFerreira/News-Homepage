@@ -17,23 +17,23 @@ import News from "./components/news/News"
 function App() {
 
   return (
-    <Wrapper border='1px solid red' > {/*Wrapper global */}
+    <Wrapper border='1px solid red' $global > {/*Wrapper global */}
+
       <Navbar>
         <ImageContainer imgURL={logo} width='48px' />
         <ImageContainer imgURL={hamburgerButton} width='42px' />
       </Navbar>
 
-      <Wrapper gap='32px' border='1px solid blue' >{/* Wrapper Central */}
+      <Wrapper direction="column" border='1px solid blue' >{/* Wrapper Central */}
 
-        <ComponentWrapper direction='column' border="3px solid black" $main >
-          <Hero />
-          <ComponentWrapper direction='column' border="3px solid orange">
+        <ComponentWrapper direction='column' border="3px solid black" $main gap="16px" >
+          <Hero/>
             <MainNew />
             <News />
-          </ComponentWrapper>
         </ComponentWrapper>
 
         <Articles/>
+
       </Wrapper>
 
     </Wrapper>

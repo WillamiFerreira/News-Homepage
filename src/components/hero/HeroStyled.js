@@ -2,6 +2,7 @@ import { styled } from "styled-components"
 
 export const HeroStyled = styled.picture`
     height: 300px;
+    grid-area: hero;
 
     ${({theme}) => theme.desktop`
         display: flex;
