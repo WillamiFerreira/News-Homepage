@@ -205,6 +205,10 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     padding: 8px;
     grid-area: uniquenew;
+
+    ${({theme:e})=>e.desktop`
+        flex-direction: row;
+    `}
     
     & > span{
         border: 1px solid blue;
@@ -224,7 +228,6 @@ Error generating stack: `+o.message+`
         }
     }
     `}
-
 
 
 `;function Jm(){return z.jsxs(Zm,{children:[z.jsx("h1",{children:"The Brinht Future of web 3.0? "}),z.jsxs("span",{children:[z.jsx("p",{children:"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"}),z.jsx(Xm,{children:"read more"})]})]})}const qm=le.div`

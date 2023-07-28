@@ -8,6 +8,10 @@ export const MainNewStyled = styled.div`
     flex-direction: column;
     padding: 8px;
     grid-area: uniquenew;
+
+    ${({theme}) => theme.desktop`
+        flex-direction: row;
+    `}
     
     & > span{
         border: 1px solid blue;
@@ -27,7 +31,6 @@ export const MainNewStyled = styled.div`
         }
     }
     `}
-
 
 
 `
