@@ -24,7 +24,7 @@ function App() {
         <ImageContainer imgURL={hamburgerButton} width='42px' />
       </Navbar>
 
-      <Wrapper direction="column" border='1px solid blue' >{/* Wrapper Central */}
+      <Wrapper direction="column" border='3px solid blue' >{/* Wrapper Central */}
 
         <ComponentWrapper direction='column' border="3px solid black" $main gap="16px" >
           <Hero/>

@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: 'Roboto', sans-serif;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
 
         
     }

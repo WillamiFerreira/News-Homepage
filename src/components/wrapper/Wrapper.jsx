@@ -16,6 +16,8 @@ export const Wrapper = styled(LogicalWrapper)`
     gap: ${props => props.gap};
     padding: ${props => props.padding || '0px'} ;
     margin: ${props => props.$global ? ' 0 20px 10px 20px' : 0 };
+    //Definir um tamanho máximo depois de todos os ajustes finos;
+    //max-width: 1400px;
 
     & button{
         align-self: center;
@@ -36,15 +38,19 @@ export const ComponentWrapper = styled(LogicalWrapper)`
     gap: ${props => props.gap};
 
     ${({theme}) => theme.tablet`
-        display: ${props => props.$main ? 'flex' : 'grid' };
+        display: grid;
         grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+
+        grid-template-areas: 
+        " hero hero "
+        " uniquenew news"
     
     `}
 
-    //ZONA DE CONSTRUÇÃO
+    
 
     ${({theme}) => theme.desktop`
-        display: ${props => props.$main ? 'grid' : 'flex' };
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
 
