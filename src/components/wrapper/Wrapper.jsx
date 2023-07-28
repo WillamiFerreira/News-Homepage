@@ -10,7 +10,6 @@ function LogicalWrapper({children, className}) {
 
 
 export const Wrapper = styled(LogicalWrapper)`
-
     display: flex;
     flex-direction: column;
     border: ${props => props.border};
@@ -25,6 +24,19 @@ export const Wrapper = styled(LogicalWrapper)`
     
     ${({theme}) => theme.tablet`
         margin: 0 36px;
+    `}
+
+`
+
+export const ComponentWrapper = styled(LogicalWrapper)`
+    display: ${props => props.display || 'flex'};
+    flex-direction: ${props => props.direction || 'row'};
+    border: ${props => props.border};
+
+    ${({theme}) => theme.tablet`
+        display: ${props => props.$main ? 'flex' : 'grid' };
+        grid-template-columns: repeat(2, auto);
+    
     `}
 
 `

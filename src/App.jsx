@@ -1,7 +1,7 @@
 import { ImageContainer, BannerContainer } from "./components/ImageContainer/ImageContainer"
 import { ArticleItem } from "./components/ArticleItem/ArticleItem"
 import {Navbar} from "./components/navbar/Navbar"
-import { Wrapper } from "./components/wrapper/Wrapper"
+import { Wrapper, ComponentWrapper } from "./components/wrapper/Wrapper";
 
 //import articles from "./assets/articles"
 import news from "./assets/news.json"
@@ -12,6 +12,7 @@ import hamburgerButton from "../src/assets/images/icon-menu.svg"
 import Articles from "./components/article/Articles"
 import Hero from "./components/hero/Hero"
 import MainNew from "./components/mainNew/MainNew"
+import News from "./components/news/News"
 
 function App() {
 
@@ -23,31 +24,14 @@ function App() {
       </Navbar>
 
       <Wrapper gap='32px' border='1px solid blue' >{/* Wrapper Central */}
-        <Hero />
 
-        {/* 
-        <Wrapper border='1px solid green'> {/*main info container
-          <article>
-            <h1>The Bright Future of Web 3.0 ?</h1>
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          </article>
-          <Buttom>
-            read more
-          </Buttom>
-        </Wrapper>
-        */}
-        <MainNew />
-
-
-        <Wrapper border='1px solid orange'> {/*News Constainer */}
-          <h2>New</h2>    
-          {news.news.map(uniqueNew => (
-            <article key={uniqueNew.id}>
-              <h3>{uniqueNew.title}</h3>
-              <p>{uniqueNew.description}</p>
-            </article>
-          ))}
-        </Wrapper>
+        <ComponentWrapper direction='column' border="3px solid black" $main >
+          <Hero />
+          <ComponentWrapper direction='column' border="3px solid orange">
+            <MainNew />
+            <News />
+          </ComponentWrapper>
+        </ComponentWrapper>
 
         <Articles/>
       </Wrapper>

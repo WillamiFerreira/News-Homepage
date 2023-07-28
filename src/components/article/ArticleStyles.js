@@ -8,12 +8,12 @@ export const ArticlesStyled = styled.div`
     gap: 40px;
 
     ${({theme}) => theme.tablet`
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
 
     `}
 
     ${({theme}) => theme.desktop`
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
 
     `}
 
