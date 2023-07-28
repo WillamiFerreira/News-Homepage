@@ -2,31 +2,31 @@ import { ImageContainer, BannerContainer } from "./components/ImageContainer/Ima
 import { ArticleItem } from "./components/ArticleItem/ArticleItem"
 import {Navbar} from "./components/navbar/Navbar"
 import { Wrapper } from "./components/wrapper/Wrapper"
-import { Buttom } from "./components/Buttom/Buttom"
-import Hero from "./components/hero/Hero"
 
 //import articles from "./assets/articles"
 import news from "./assets/news.json"
 
 import logo from "../src/assets/images/logo.svg"
 import hamburgerButton from "../src/assets/images/icon-menu.svg"
-import bannerMobile from "../src/assets/images/image-web-3-mobile.jpg"
+//import bannerMobile from "../src/assets/images/image-web-3-mobile.jpg"
 import Articles from "./components/article/Articles"
+import Hero from "./components/hero/Hero"
+import MainNew from "./components/mainNew/MainNew"
 
 function App() {
 
   return (
-    <Wrapper padding='0px 16px'> {/*Wrapper global */}
+    <Wrapper border='1px solid red' > {/*Wrapper global */}
       <Navbar>
         <ImageContainer imgURL={logo} width='48px' />
         <ImageContainer imgURL={hamburgerButton} width='42px' />
       </Navbar>
 
-      <Wrapper gap='32px' padding='32px 0'>{/* Wrapper Central */}
-        {/*<BannerContainer imgURL={bannerMobile} />*/}
-        <Hero/>
+      <Wrapper gap='32px' border='1px solid blue' >{/* Wrapper Central */}
+        <Hero />
 
-        <Wrapper> {/*main info container*/}
+        {/* 
+        <Wrapper border='1px solid green'> {/*main info container
           <article>
             <h1>The Bright Future of Web 3.0 ?</h1>
             <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
@@ -35,8 +35,11 @@ function App() {
             read more
           </Buttom>
         </Wrapper>
+        */}
+        <MainNew />
 
-        <Wrapper> {/*News Constainer */}
+
+        <Wrapper border='1px solid orange'> {/*News Constainer */}
           <h2>New</h2>    
           {news.news.map(uniqueNew => (
             <article key={uniqueNew.id}>

@@ -13,12 +13,18 @@ export const Wrapper = styled(LogicalWrapper)`
 
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    border: ${props => props.border};
     gap: ${props => props.gap};
-    padding: ${props => props.padding};
+    padding: ${props => props.padding || '0px'} ;
+    margin: 0 16px;
 
     & button{
         align-self: center;
     }
+
+    
+    ${({theme}) => theme.tablet`
+        margin: 0 36px;
+    `}
 
 `

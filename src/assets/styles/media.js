@@ -4,7 +4,8 @@ const screenSizes = {
   large: 1170,
   desktop: 992,
   tablet: 768,
-  mobile: 376
+  mobile: 376,
+  st: 320
 }
 
 export const media = Object

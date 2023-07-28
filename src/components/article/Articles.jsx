@@ -14,7 +14,7 @@ function Articles(){
         <ArticlesStyled>
             {
                 articles.map((article) => ( //objeto
-                    <ArticleStyled>
+                    <ArticleStyled key={article.id}>
                         <ArticleThumbContentStyled>
                             <ArticleThumbStyled src={article.url} />
                         </ArticleThumbContentStyled>
