@@ -1,12 +1,16 @@
-import { styled } from "styled-components";
-import LogicalNavbar from "./LogicalNavbar";
+import {
+    NavbarStyled,
+    MenuToggle
+} from "./NavbarStyled"
 
-export const Navbar = styled(LogicalNavbar)`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 88px;
-    
-    border: 1px solid black;
-`
+export default function Navbar(){
+    return(
+        <NavbarStyled>
+            <MenuToggle>
+                <div className="stick01"></div>
+                <div className="stick02"></div>
+                <div className="stick03"></div>
+            </MenuToggle>
+        </NavbarStyled>
+    )
+}
