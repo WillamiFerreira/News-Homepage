@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         width: 100vw;
         display: flex;
         justify-content: center;
+        overflow: hidden;
 
         
     }

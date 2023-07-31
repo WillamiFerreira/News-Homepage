@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 import {
     NavbarStyled,
     MenuToggle
@@ -14,10 +15,10 @@ export default function Navbar(){
 
     return(
         <NavbarStyled open={show}>
-            <MenuToggle onClick={toggleMenu}>
-                <div className="stick01"></div>
-                <div className="stick02"></div>
-                <div className="stick03"></div>
+            <MenuToggle onClick={toggleMenu} open={show}>
+                <div className="one"></div>
+                <div className="two"></div>
+                <div className="three"></div>
             </MenuToggle>
             <nav>
                 <ul> 
