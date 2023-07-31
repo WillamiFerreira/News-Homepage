@@ -1,5 +1,6 @@
 import {create} from 'zustand';
 
-const store = create((set) => {
+const store = create((set) => ({
     
-})
+}))
+
