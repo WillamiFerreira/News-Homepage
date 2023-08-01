@@ -33,6 +33,10 @@ export const NewContentStyle = styled.article`
     flex-direction: column;
     row-gap: 18px;
 
+    h2, p {
+        color: white;
+    }
+
     h2{
         font-size: 20px;
         font-weight: 800;
