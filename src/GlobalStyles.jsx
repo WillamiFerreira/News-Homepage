@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+
 const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
@@ -11,9 +12,7 @@ const GlobalStyle = createGlobalStyle`
         width: 100vw;
         display: flex;
         justify-content: center;
-        overflow: hidden;
-
-        
+        overflow: ${(value) => value.show ? "hidden" : "initial"};
     }
 `
 

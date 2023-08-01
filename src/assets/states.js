@@ -1,6 +1,8 @@
 import {create} from 'zustand';
 
-const store = create((set) => ({
-    
-}))
+const useStore = create((set) => ({
+  show: false,
+  setShow: () => set((state) => ({show: state.show = !state.show}))
+}));
 
+export default useStore;

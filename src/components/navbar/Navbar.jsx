@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import useStore from '../../assets/states';
 
 import {
     NavbarStyled,
@@ -7,11 +7,19 @@ import {
 } from "./NavbarStyled"
 
 export default function Navbar(){
+    // const show = useStore((state) => state.show);
+    // const setShow = useStore((state) => state.setShow);
+    //console.log(show);
+
+
     const [show, setShow] = useState(false);
 
     const toggleMenu = () => {
         setShow(!show);
     }
+    
+    document.body.style.overflow = show ? "hidden" : "initial";
+
 
     return(
         <NavbarStyled open={show}>

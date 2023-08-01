@@ -7,8 +7,8 @@ import { media } from './assets/styles/media.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GlobalStyle />
     <ThemeProvider theme={{...media}}>
+    <GlobalStyle />
       <App />
     </ThemeProvider>
   </React.StrictMode>,
