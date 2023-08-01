@@ -34,6 +34,7 @@ export const Wrapper = styled(LogicalWrapper)`
 export const ComponentWrapper = styled(LogicalWrapper)`
     display: ${props => props.display || 'flex'};
     flex-direction: ${props => props.direction || 'row'};
+    align-items: ${props => props.align_items};
     border: ${props => props.border};
     gap: ${props => props.gap};
 

@@ -82,6 +82,7 @@ Error generating stack: `+o.message+`
 `,Fm=ee(rd)`
     display: ${e=>e.display||"flex"};
     flex-direction: ${e=>e.direction||"row"};
+    align-items: ${e=>e.align_items};
     border: ${e=>e.border};
     gap: ${e=>e.gap};
 
@@ -223,11 +224,53 @@ Error generating stack: `+o.message+`
 
 
 `;function t0(){return N.jsxs(e0,{children:[N.jsx("h1",{children:"The Brinht Future of web 3.0? "}),N.jsxs("span",{children:[N.jsx("p",{children:"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"}),N.jsx(bm,{children:"read more"})]})]})}const n0=[{id:0,title:"Hydrogen VS Eletric Cars",description:"Will hydrogen-fueled cars catch up to EVs?"},{id:1,title:"The Downsides of AI Artistry",description:"What are the possible adverse effects of on-demand AI image generation?"},{id:2,title:"Is VC Funding Drying Up?",description:"Private funding by VC firms is down 50% YOY. We take a look at what that means."}],r0=ee.div`
-    border: 1px solid red;
+    //border: 1px solid red;
     padding: 10px;
     grid-area: news;
+    max-width: 344px;
+    padding: 22px;
+    background-color: #00001A;
+
+    h1{
+        color: #E9AB53;
+        margin-bottom: 42px;
+        font-size: 32px;
+
+
+    }
+
+    & > div#newsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 372px;
+
+    }
+
+    
+
+    
 `,l0=ee.article`
-`;function o0(){return N.jsxs(r0,{children:[N.jsx("h1",{children:"New"}),n0.map(e=>N.jsxs(l0,{children:[N.jsx("h2",{children:e.title}),N.jsx("p",{children:e.description})]},e.id))]})}const ya=e=>{let t;const n=new Set,r=(s,c)=>{const m=typeof s=="function"?s(t):s;if(!Object.is(m,t)){const h=t;t=c??typeof m!="object"?m:Object.assign({},t,m),n.forEach(p=>p(t,h))}},l=()=>t,u={setState:r,getState:l,subscribe:s=>(n.add(s),()=>n.delete(s)),destroy:()=>{n.clear()}};return t=e(r,l,u),u},i0=e=>e?ya(e):ya;var ld={exports:{}},od={},id={exports:{}},ud={};/**
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    h2{
+        font-size: 20px;
+        font-weight: 800;
+
+    }
+
+    p{
+        line-height: 20px; /* 100% */
+    }
+
+    hr{
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+`;function o0(){return N.jsxs(r0,{children:[N.jsx("h1",{children:"New"}),N.jsx("div",{id:"newsContainer",children:n0.map((e,t)=>N.jsxs(l0,{children:[N.jsx("h2",{children:e.title}),N.jsx("p",{children:e.description}),t!=2&&N.jsx("hr",{})]},e.id))})]})}const ya=e=>{let t;const n=new Set,r=(s,c)=>{const m=typeof s=="function"?s(t):s;if(!Object.is(m,t)){const h=t;t=c??typeof m!="object"?m:Object.assign({},t,m),n.forEach(p=>p(t,h))}},l=()=>t,u={setState:r,getState:l,subscribe:s=>(n.add(s),()=>n.delete(s)),destroy:()=>{n.clear()}};return t=e(r,l,u),u},i0=e=>e?ya(e):ya;var ld={exports:{}},od={},id={exports:{}},ud={};/**
  * @license React
  * use-sync-external-store-shim.production.min.js
  *
@@ -318,18 +361,32 @@ Error generating stack: `+o.message+`
     ${({theme:e})=>e.tablet`
         display: none;
     `}
-`;function L0(){const[e,t]=et.useState(!1),n=()=>{t(!e)};return document.body.style.overflow=e?"hidden":"initial",N.jsxs(z0,{open:e,children:[N.jsxs(R0,{onClick:n,open:e,children:[N.jsx("div",{className:"one"}),N.jsx("div",{className:"two"}),N.jsx("div",{className:"three"})]}),N.jsx("nav",{children:N.jsxs("ul",{children:[N.jsx("li",{children:"Home"}),N.jsx("li",{children:"New"}),N.jsx("li",{children:"Popular"}),N.jsx("li",{children:"Treading"}),N.jsx("li",{children:"Categories"})]})})]})}function I0(){return N.jsxs(ga,{border:"1px solid red",$global:!0,children:[" ",N.jsx(L0,{}),N.jsxs(ga,{direction:"column",border:"3px solid blue",children:[N.jsxs(Fm,{direction:"column",border:"3px solid black",$main:!0,gap:"16px",children:[N.jsx(Jm,{}),N.jsx(t0,{}),N.jsx(o0,{})]}),N.jsx(Ym,{})]})]})}const O0=jm`
+`;function L0(){const[e,t]=et.useState(!1),n=()=>{t(!e)};return document.body.style.overflow=e?"hidden":"initial",N.jsxs(z0,{open:e,children:[N.jsxs(R0,{onClick:n,open:e,children:[N.jsx("div",{className:"one"}),N.jsx("div",{className:"two"}),N.jsx("div",{className:"three"})]}),N.jsx("nav",{children:N.jsxs("ul",{children:[N.jsx("li",{children:"Home"}),N.jsx("li",{children:"New"}),N.jsx("li",{children:"Popular"}),N.jsx("li",{children:"Treading"}),N.jsx("li",{children:"Categories"})]})})]})}function I0(){return N.jsxs(ga,{border:"1px solid red",$global:!0,children:[" ",N.jsx(L0,{}),N.jsxs(ga,{direction:"column",border:"3px solid blue",children:[N.jsxs(Fm,{direction:"column",border:"3px solid black",$main:!0,gap:"16px",align_items:"center",children:[N.jsx(Jm,{}),N.jsx(t0,{}),N.jsx(o0,{})]}),N.jsx(Ym,{})]})]})}const O0=jm`
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+    
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
+        
+        p {
+            font-weight: 400;
+        }
+
+        h1{
+            font-weight: 800;
+        }
+
+        h2{
+            font-weight: 700;
+        }
+
         width: 100vw;
         display: flex;
         justify-content: center;
-        overflow: ${e=>e.show?"hidden":"initial"};
     }
 `,Sa={large:1170,desktop:992,tablet:768,mobile:376,st:320},j0=Object.keys(Sa).reduce((e,t)=>(e[t]=(...n)=>Ql`
       @media (min-width: ${Sa[t]/16}rem) {

@@ -32,12 +32,11 @@ function App() {
 
       <Wrapper direction="column" border='3px solid blue' >{/* Wrapper Central */}
 
-        <ComponentWrapper direction='column' border="3px solid black" $main gap="16px" >
+        <ComponentWrapper direction='column' border="3px solid black" $main gap="16px" align_items="center" >
           <Hero/>
-            <MainNew />
-            <News />
+          <MainNew />
+          <News />
         </ComponentWrapper>
-
         <Articles/>
 
       </Wrapper>
