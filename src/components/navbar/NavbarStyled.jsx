@@ -2,16 +2,16 @@ import { styled } from "styled-components";
 
 export const NavbarStyled = styled.div`
     display: flex;
-    position: relative;
-    //flex-direction: row;
+    position: ${props => props.open ? "absolute" : "static"};;
+    right: 0;
     align-items: center;
     justify-content: ${props => props.open ? "left" : "space-between"};
-    width: 100%;
+    width: ${props => props.open ? "80%" : "100%"};
     height: ${props => props.open ? "100vh" : "88px" };
     //border: 1px solid black;
-    padding: 0 16px;
+    
     background-color: white;
-    z-index: 10;
+    //z-index: 10;
     
 
     #logo{
@@ -27,22 +27,34 @@ export const NavbarStyled = styled.div`
 
     nav{
         display: ${(props) => props.open ? 'flex' : 'none'};
+        font-size: 15px;
 
         ${({theme}) => theme.tablet`
+            width: 380px;
             display: flex;
+            
         `}
+
+        ${({theme}) => theme.desktop`
+            width: 445px;
+        `}
+
+
 
         ul {
             display: flex;
             flex-direction: ${props => props.open ? "column" : "row"};
             text-align: left;
+            width: 100%;
             position: relative;
-            justify-content: flex-end;
+            justify-content: space-between;
+            height: ${props => props.open ? "200px" : "fit-content"};
             list-style: none;
-            gap: 20px;
+            margin-left: ${props => props.open ? "16px" : "0px"};
+
 
             li {
-                color: #5D5F79;
+                color: ${props => props.open ? "#000" : "#5D5F79"};                
             }
 
         }
@@ -65,10 +77,33 @@ export const NavbarStyled = styled.div`
 
     
 `;
+
+export const BackgroundNavStyled = styled(NavbarStyled)`
+    display: ${props => props.open ? "relative" : "none"};
+    //display: block;
+    width: 100%;
+    height: 88px;
+    flex-direction: row;
+    div#loginho{
+        display: block;
+        position: relative;
+        left: 20px;
+        width: 48px;
+        //background-color: purple;
+
+        & > img {
+            display: block;
+            width: 100%;
+        }
+
+
+    }
+
+`
 export const MenuToggle = styled.button`
     position: ${props => props.open ? "absolute" : "relative"};
     top: ${props => props.open ? "34px" : ""};
-    right: ${props => props.open ? "16px" : ""};
+    right: ${props => props.open ? "20px" : ""};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +116,7 @@ export const MenuToggle = styled.button`
     background-color: transparent;
 
     & > div{ 
-        height: 4px;
+        height: 3px;
         width: 100%;
         background-color: black;
         transition-duration: .4s;
@@ -99,7 +134,7 @@ export const MenuToggle = styled.button`
     }
 
     & > div.three{ 
-        transform: ${props => props.open ? "rotate(-45deg) translate(5px, -4px)": "none"};
+        transform: ${props => props.open ? "rotate(-45deg) translate(3px, -3px)": "none"};
 
     }
 

@@ -3,7 +3,8 @@ import logo from '../../assets/images/logo.svg'
 
 import {
     NavbarStyled,
-    MenuToggle
+    MenuToggle,
+    BackgroundNavStyled
 } from "./NavbarStyled"
 
 export default function Navbar(){
@@ -21,6 +22,11 @@ export default function Navbar(){
     document.body.style.overflow = show ? "hidden" : "initial";
 
     return(
+        <>
+        <BackgroundNavStyled open={show}>
+            <div id="loginho" > <img src={logo} alt="" /> </div>
+        </BackgroundNavStyled>
+        
         <NavbarStyled open={show}>
             <img id='logo' src={logo} alt="logo" />
 
@@ -40,5 +46,6 @@ export default function Navbar(){
             </nav>
 
         </NavbarStyled>
+        </>
     )
 }
