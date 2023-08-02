@@ -23,16 +23,11 @@ function App() {
 
     <Wrapper border='1px solid red' $global > {/*Wrapper global */}
 
-      {/* <Navbar>
-        <ImageContainer imgURL={logo} width='48px' />
-        <ImageContainer imgURL={hamburgerButton} width='42px' />
-      </Navbar> */}
-
       <Navbar />
 
-      <Wrapper direction="column" border='3px solid blue' >{/* Wrapper Central */}
+      <Wrapper direction="column"  >{/* Wrapper Central */}
 
-        <ComponentWrapper direction='column' border="3px solid black" $main gap="16px" align_items="center" >
+        <ComponentWrapper direction='column' margin="0 0 32px 0" $main gap="32px"  place_items="center" >
           <Hero/>
           <MainNew />
           <News />

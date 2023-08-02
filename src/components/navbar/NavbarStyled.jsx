@@ -3,15 +3,26 @@ import { styled } from "styled-components";
 export const NavbarStyled = styled.div`
     display: flex;
     position: relative;
-    flex-direction: row-reverse;
+    //flex-direction: row;
     align-items: center;
     justify-content: ${props => props.open ? "left" : "space-between"};
     width: 100%;
-    height: ${props => props.open ? "100vh" : "60px" };
-    border: 1px solid black;
+    height: ${props => props.open ? "100vh" : "88px" };
+    //border: 1px solid black;
     padding: 0 16px;
     background-color: white;
     z-index: 10;
+
+    #logo{
+        display: ${props => props.open ? "none" : "block"};
+        width: 48px;
+
+        ${({theme}) => theme.desktop`
+
+            width: 64px;
+        
+        `}
+    }
 
     nav{
         display: ${(props) => props.open ? 'flex' : 'none'};
@@ -31,19 +42,32 @@ export const NavbarStyled = styled.div`
         }
     }
 
+    ${({theme}) => theme.tablet`
+        height: ${props => props.open ? "100vh" : "120px" };
+
+    `}
+
+    ${({theme}) => theme.desktop`
+        height: ${props => props.open ? "100vh" : "164px" };
+        padding-top: 20px;
+
+
+
+    `}
+
+
 
     
 `;
 export const MenuToggle = styled.button`
-    position: absolute;
-    top: 12px;
-    right: 12px;
+    position: ${props => props.open ? "absolute" : "relative"};
+    top: ${props => props.open ? "34px" : ""};
+    right: ${props => props.open ? "16px" : ""};
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 4px;
     width: 40px;
-    height: 40px;
     //border: 1px solid black;
     
 

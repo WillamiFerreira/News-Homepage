@@ -11,11 +11,13 @@ function News(){
             
             <div id="newsContainer">
                { news.map((uniqueNew, i) => (
+                    <>
                     <NewContentStyle key={uniqueNew.id}>
                         <h2>{uniqueNew.title}</h2>
                         <p>{uniqueNew.description}</p>
-                        {i != 2 && <hr />}
                     </NewContentStyle>
+                    {i != 2 && <div class="hrCont" ><hr/></div>}
+                    </>
                 ))
                 }
             </div>

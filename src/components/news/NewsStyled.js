@@ -1,17 +1,27 @@
 import { styled } from "styled-components"
 
 export const NewsStyled = styled.div`
-    //border: 1px solid red;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
     grid-area: news;
-    max-width: 344px;
-    padding: 22px;
+    row-gap: 42px;
+    padding: 30px 22px;
     background-color: #00001A;
+    height: 100%;
+
+    ${({theme}) => theme.tablet`
+        padding: 16px;
+    `}
 
     h1{
         color: #E9AB53;
-        margin-bottom: 42px;
         font-size: 32px;
+        //border: 1px solid red;
+
+        ${({theme}) => theme.desktop`
+            font-size:40px;
+        `}
 
 
     }
@@ -19,12 +29,16 @@ export const NewsStyled = styled.div`
     & > div#newsContainer{
         display: flex;
         flex-direction: column;
+        //border: 1px solid yellow;
         justify-content: space-between;
-        height: 372px;
+        flex-grow: 1;
+       
 
     }
 
-    
+    div.hrCont > hr{
+        margin: 34px 0;
+    }
 
     
 `
@@ -45,11 +59,7 @@ export const NewContentStyle = styled.article`
 
     p{
         line-height: 20px; /* 100% */
-    }
-
-    hr{
-        margin-top: 8px;
-        margin-bottom: 4px;
+        font-size: 15px;
     }
 
 `

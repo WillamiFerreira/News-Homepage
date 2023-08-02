@@ -9,7 +9,7 @@ import {
 function Hero({id}){
     return(
         <HeroStyled id={id}>
-            <source media="(min-width: 768px)" srcSet={largeHero} />
+            <source media="(min-width: 668px)" srcSet={largeHero} />
             <HeroImageStyled src={tinyHero}/>
         </HeroStyled>
     )

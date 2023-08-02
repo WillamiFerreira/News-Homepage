@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
     
     * {
         margin: 0;
@@ -17,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
         }
 
         h1{
-            font-weight: 800;
+            font-weight: 900;
         }
 
         h2{

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useStore from '../../assets/states';
+import logo from '../../assets/images/logo.svg'
 
 import {
     NavbarStyled,
@@ -20,9 +20,10 @@ export default function Navbar(){
     
     document.body.style.overflow = show ? "hidden" : "initial";
 
-
     return(
         <NavbarStyled open={show}>
+            <img id='logo' src={logo} alt="logo" />
+
             <MenuToggle onClick={toggleMenu} open={show}>
                 <div className="one"></div>
                 <div className="two"></div>

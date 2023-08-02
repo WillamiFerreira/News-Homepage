@@ -16,8 +16,8 @@ export const Wrapper = styled(LogicalWrapper)`
     gap: ${props => props.gap};
     padding: ${props => props.padding || '0px'} ;
     margin: ${props => props.$global ? ' 0 20px 10px 20px' : 0 };
-    //Definir um tamanho máximo depois de todos os ajustes finos;
-    //max-width: 1400px;
+    //max-width: 500px;
+
 
     & button{
         align-self: center;
@@ -25,18 +25,30 @@ export const Wrapper = styled(LogicalWrapper)`
 
     
     ${({theme}) => theme.tablet`
-        margin: ${props => props.$global ? ' 0 40px 10px 40px' : 0 };
+        max-width: 660px;
         
     `}
+
+${({theme}) => theme.desktop`
+        margin: ${props => props.$global ? ' 0 30px 10px 30px' : 0 };
+        //Definir um tamanho máximo depois de todos os ajustes finos;
+        max-width: 1100px;
+        
+    `}
+
+
 
 `
 
 export const ComponentWrapper = styled(LogicalWrapper)`
     display: ${props => props.display || 'flex'};
     flex-direction: ${props => props.direction || 'row'};
-    align-items: ${props => props.align_items};
+    place-items: ${props => props.place_items};
+    margin: ${props => props.margin};
     border: ${props => props.border};
     gap: ${props => props.gap};
+
+    
 
     ${({theme}) => theme.tablet`
         display: grid;
