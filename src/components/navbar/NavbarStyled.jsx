@@ -12,6 +12,7 @@ export const NavbarStyled = styled.div`
     padding: 0 16px;
     background-color: white;
     z-index: 10;
+    
 
     #logo{
         display: ${props => props.open ? "none" : "block"};
@@ -39,6 +40,11 @@ export const NavbarStyled = styled.div`
             justify-content: flex-end;
             list-style: none;
             gap: 20px;
+
+            li {
+                color: #5D5F79;
+            }
+
         }
     }
 

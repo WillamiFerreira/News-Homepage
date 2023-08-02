@@ -15,7 +15,7 @@ export const Wrapper = styled(LogicalWrapper)`
     border: ${props => props.border};
     gap: ${props => props.gap};
     padding: ${props => props.padding || '0px'} ;
-    margin: ${props => props.$global ? ' 0 20px 10px 20px' : 0 };
+    margin: ${props => props.$global ? ' 0 20px 30px 20px' : 0 };
     //max-width: 500px;
 
 
@@ -26,11 +26,12 @@ export const Wrapper = styled(LogicalWrapper)`
     
     ${({theme}) => theme.tablet`
         max-width: 720px;
+        margin-bottom: 40px;
         
     `}
 
-${({theme}) => theme.desktop`
-        margin: ${props => props.$global ? ' 0 30px 10px 30px' : 0 };
+    ${({theme}) => theme.desktop`
+        margin: ${props => props.$global ? ' 0 30px 84px 30px' : 0 };
         max-width: 1100px;
         
     `}

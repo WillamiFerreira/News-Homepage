@@ -11,6 +11,7 @@ export const NewsStyled = styled.div`
     height: 100%;
 
     ${({theme}) => theme.tablet`
+        
         padding: 30px 14px;
         row-gap: 30px;
     `}

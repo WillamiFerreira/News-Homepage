@@ -26,13 +26,12 @@ export const ArticleStyled = styled.article`
 
 
     ${({theme}) => theme.tablet`
-        flex-direction: row;
+        flex-direction: column;
     `}
 
 
     ${({theme}) => theme.desktop`
-        // display: flex;
-        // flex-direction: row;
+        flex-direction: row;
     `}
 
 
@@ -53,8 +52,23 @@ export const ArticleThumbStyled = styled.img`
     //border: 1px solid purple;
     display: block;
     object-fit: cover;
+    object-position: center;
     width: 100px;
     height: 100%;
+
+    ${({theme}) => theme.tablet`
+        height: 140px;
+        width: 100%;
+        margin-bottom: 12px;
+    `}
+
+    ${({theme}) => theme.desktop`
+        width: 100px;
+        height: 100%;
+        margin-bottom: 0;
+    `}
+
+
 
 
 `
@@ -73,11 +87,30 @@ export const ArticleContentStyled  = styled.div`
         font-style: normal;
         font-weight: 700;
         line-height: 27px; /* 90% */
+
+        ${({theme}) => theme.tablet`
+            font-size: 34px;
+            margin-bottom: 8px;
+        `}
+
+        ${({theme}) => theme.desktop`
+            font-size: 30px;
+            margin-bottom: 0px;
+        `}
     }
 
     h2{
         font-size: 18px;
         font-weight: 800;
+
+        ${({theme}) => theme.tablet`
+            font-size: 22px;
+        `}
+
+        ${({theme}) => theme.desktop`
+            font-size: 18px;
+        `}
+
     }
 
     p{
@@ -87,5 +120,7 @@ export const ArticleContentStyled  = styled.div`
         font-style: normal;
         font-weight: 400;
         line-height: 27px; /* 180% */
+
+
     }
 `
