@@ -27,7 +27,7 @@ function App() {
 
       <Wrapper direction="column"  >{/* Wrapper Central */}
 
-        <ComponentWrapper direction='column' margin="0 0 32px 0" $main gap="32px"  place_items="center" >
+        <ComponentWrapper direction='column'  $main gap="32px"  place_items="center" >
           <Hero/>
           <MainNew />
           <News />

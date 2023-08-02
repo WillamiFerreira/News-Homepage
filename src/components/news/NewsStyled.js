@@ -11,7 +11,13 @@ export const NewsStyled = styled.div`
     height: 100%;
 
     ${({theme}) => theme.tablet`
-        padding: 16px;
+        padding: 30px 14px;
+        row-gap: 30px;
+    `}
+
+    ${({theme}) => theme.desktop`
+        padding: 34px 24px;
+        row-gap: 40px;
     `}
 
     h1{
@@ -38,6 +44,14 @@ export const NewsStyled = styled.div`
 
     div.hrCont > hr{
         margin: 34px 0;
+
+        ${({theme}) => theme.tablet`
+            margin: 28px 0;
+        `}
+
+        ${({theme}) => theme.desktop`
+            margin: 32px 0;
+        `}
     }
 
     
