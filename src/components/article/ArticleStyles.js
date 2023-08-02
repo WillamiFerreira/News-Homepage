@@ -1,7 +1,7 @@
 import {styled} from 'styled-components';
 
 export const ArticlesStyled = styled.div`
-    border: 3px solid #9B2915;
+    //border: 3px solid #9B2915;
     display: grid;
     //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(1, minmax(auto, 1fr));
@@ -19,27 +19,27 @@ export const ArticlesStyled = styled.div`
 
 `
 export const ArticleStyled = styled.article`
-    border: 1px solid blue;
+    //border: 1px solid blue;
     display: flex;
     column-gap: 22px;
+    max-width: 360px;
 
 
     ${({theme}) => theme.tablet`
-        flex-direction: column;
+        flex-direction: row;
     `}
 
 
     ${({theme}) => theme.desktop`
-        display: flex;
-        flex-direction: row;
+        // display: flex;
+        // flex-direction: row;
     `}
 
 
 
 `
 export const ArticleThumbContentStyled = styled.div`
-    border: 3px solid green;
-    
+    //border: 3px solid green;
 
 
     /* ${({theme}) => theme.tablet`
@@ -50,24 +50,20 @@ export const ArticleThumbContentStyled = styled.div`
 
 `
 export const ArticleThumbStyled = styled.img`
-    border: 1px solid purple;
+    //border: 1px solid purple;
     display: block;
     object-fit: cover;
-    width: 100%;
-    height: 100;
+    width: 100px;
+    height: 100%;
 
-    ${({theme}) => theme.tablet`
-            height: 141px;
-            object-fit: cover;
-    `}
-    
+
 `
 export const ArticleContentStyled  = styled.div`
     display: flex;
     padding: 6px 0;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid orange;
+    //border: 2px solid orange;
     width: 100%;
 
     h1{
@@ -77,6 +73,11 @@ export const ArticleContentStyled  = styled.div`
         font-style: normal;
         font-weight: 700;
         line-height: 27px; /* 90% */
+    }
+
+    h2{
+        font-size: 18px;
+        font-weight: 800;
     }
 
     p{

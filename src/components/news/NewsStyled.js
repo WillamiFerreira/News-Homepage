@@ -3,7 +3,7 @@ import { styled } from "styled-components"
 export const NewsStyled = styled.div`
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    //border: 1px solid red;
     grid-area: news;
     row-gap: 42px;
     padding: 30px 22px;

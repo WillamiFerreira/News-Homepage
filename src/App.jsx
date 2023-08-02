@@ -21,7 +21,7 @@ function App() {
 
   return (
 
-    <Wrapper border='1px solid red' $global > {/*Wrapper global */}
+    <Wrapper $global > {/*Wrapper global */}
 
       <Navbar />
 
