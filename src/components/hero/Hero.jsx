@@ -8,9 +8,9 @@ import {
 
 function Hero({id}){
     return(
-        <HeroStyled id={id}>
-            <source media="(min-width: 668px)" srcSet={largeHero} />
-            <HeroImageStyled src={tinyHero}/>
+        <HeroStyled id={id} role="hero" >
+            <source media="(min-width: 668px)" srcSet={largeHero} alt="desktop hero imagem" />
+            <HeroImageStyled src={tinyHero} alt="mobile hero imagem"/>
         </HeroStyled>
     )
 }

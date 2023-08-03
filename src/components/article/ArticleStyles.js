@@ -1,9 +1,7 @@
 import {styled} from 'styled-components';
 
 export const ArticlesStyled = styled.div`
-    //border: 3px solid #9B2915;
     display: grid;
-    //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(1, minmax(auto, 1fr));
     gap: 40px;
 

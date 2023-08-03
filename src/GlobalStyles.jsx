@@ -27,6 +27,15 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         justify-content: center;
     }
+
+    #waterMark{
+        font-size: 12px;
+        margin-top: 15px;
+
+        ${({theme}) => theme.desktop`
+            margin-top: 20px;
+        `}
+    }
 `
 
 export default GlobalStyle;

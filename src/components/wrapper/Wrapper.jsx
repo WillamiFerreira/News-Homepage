@@ -26,7 +26,7 @@ export const Wrapper = styled(LogicalWrapper)`
     
     ${({theme}) => theme.tablet`
         max-width: 720px;
-        margin-bottom: 40px;
+        //margin-bottom: 40px;
         
     `}
 

@@ -16,7 +16,7 @@ function Articles(){
                 articles.map((article) => ( //objeto
                     <ArticleStyled key={article.id}>
                         <ArticleThumbContentStyled>
-                            <ArticleThumbStyled src={article.url} />
+                            <ArticleThumbStyled src={article.url} alt={article.alt} />
                         </ArticleThumbContentStyled>
 
                         <ArticleContentStyled>
@@ -27,8 +27,8 @@ function Articles(){
                     </ArticleStyled>
                 ))
             }
-            
         </ArticlesStyled>
+
     )
 }
 

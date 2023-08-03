@@ -4,15 +4,9 @@ import logo from '../../assets/images/logo.svg'
 import {
     NavbarStyled,
     MenuToggle,
-    BackgroundNavStyled
 } from "./NavbarStyled"
 
 export default function Navbar(){
-    // const show = useStore((state) => state.show);
-    // const setShow = useStore((state) => state.setShow);
-    //console.log(show);
-
-
     const [show, setShow] = useState(false);
 
     const toggleMenu = () => {
@@ -23,8 +17,8 @@ export default function Navbar(){
 
     return(
         <>        
-        <NavbarStyled open={show}>
-            <img id='logo' src={logo} alt="logo" />
+        <NavbarStyled open={show} >
+            <img id='logo' src={logo} alt="logo" rule="logo" />
 
             <MenuToggle onClick={toggleMenu} open={show}>
                 <div className="one"></div>
