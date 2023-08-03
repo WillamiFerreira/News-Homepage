@@ -22,11 +22,7 @@ export default function Navbar(){
     document.body.style.overflow = show ? "hidden" : "initial";
 
     return(
-        <>
-        <BackgroundNavStyled open={show}>
-            <div id="loginho" > <img src={logo} alt="" /> </div>
-        </BackgroundNavStyled>
-        
+        <>        
         <NavbarStyled open={show}>
             <img id='logo' src={logo} alt="logo" />
 

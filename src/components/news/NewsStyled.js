@@ -69,6 +69,11 @@ export const NewContentStyle = styled.article`
     h2{
         font-size: 20px;
         font-weight: 800;
+        cursor: pointer;
+
+        :hover{
+            color: hsl(35, 77%, 62%)
+        }
 
     }
 

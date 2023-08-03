@@ -41,6 +41,7 @@ export const ArticleThumbContentStyled = styled.div`
     //border: 3px solid green;
 
 
+
     /* ${({theme}) => theme.tablet`
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -102,6 +103,7 @@ export const ArticleContentStyled  = styled.div`
     h2{
         font-size: 18px;
         font-weight: 800;
+        cursor: pointer;
 
         ${({theme}) => theme.tablet`
             font-size: 22px;
@@ -110,6 +112,10 @@ export const ArticleContentStyled  = styled.div`
         ${({theme}) => theme.desktop`
             font-size: 18px;
         `}
+
+        &:hover{
+            color: hsl(5, 85%, 63%);
+        }
 
     }
 

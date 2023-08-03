@@ -28,6 +28,8 @@ export const MainNewStyled = styled.div`
 
     }
 
+
+
     
     & > span{
         //border: 1px solid blue;
@@ -49,6 +51,11 @@ export const MainNewStyled = styled.div`
             font-weight: 700;
             background-color : #F15E50;
             margin-top: 22px;
+            cursor: pointer;
+
+            &:hover{
+            background-color: hsl(240, 100%, 5%);
+    }
 
         }
     }

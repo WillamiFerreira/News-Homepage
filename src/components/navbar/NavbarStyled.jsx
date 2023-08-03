@@ -6,12 +6,9 @@ export const NavbarStyled = styled.div`
     right: 0;
     align-items: center;
     justify-content: ${props => props.open ? "left" : "space-between"};
-    width: ${props => props.open ? "80%" : "100%"};
+    width: 100%;
     height: ${props => props.open ? "100vh" : "88px" };
-    //border: 1px solid black;
-    
     background-color: white;
-    //z-index: 10;
     
 
     #logo{
@@ -54,7 +51,12 @@ export const NavbarStyled = styled.div`
 
 
             li {
-                color: ${props => props.open ? "#000" : "#5D5F79"};                
+                color: ${props => props.open ? "#000" : "#5D5F79"};    
+                cursor: pointer;     
+                
+                &:hover{
+                    color: hsl(5, 85%, 63%)
+                }
             }
 
         }
@@ -80,7 +82,6 @@ export const NavbarStyled = styled.div`
 
 export const BackgroundNavStyled = styled(NavbarStyled)`
     display: ${props => props.open ? "relative" : "none"};
-    //display: block;
     width: 100%;
     height: 88px;
     flex-direction: row;
@@ -109,11 +110,10 @@ export const MenuToggle = styled.button`
     justify-content: center;
     gap: 4px;
     width: 40px;
-    //border: 1px solid black;
-    
-
     border: 0;
     background-color: transparent;
+
+
 
     & > div{ 
         height: 3px;
