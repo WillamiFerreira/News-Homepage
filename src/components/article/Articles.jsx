@@ -20,7 +20,7 @@ function Articles(){
                         </ArticleThumbContentStyled>
 
                         <ArticleContentStyled>
-                            <h1>{`0${article.id + 1}`}</h1>
+                            <h2>{`0${article.id + 1}`}</h2>
                             <h2>{article.title}</h2>
                             <p>{article.preview}</p>
                         </ArticleContentStyled>

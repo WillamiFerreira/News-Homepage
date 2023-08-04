@@ -79,7 +79,7 @@ export const ArticleContentStyled  = styled.div`
     //border: 2px solid orange;
     width: 100%;
 
-    h1{
+    h2{
         color: #C5C6CE;
         font-family: Inter;
         font-size: 30px;

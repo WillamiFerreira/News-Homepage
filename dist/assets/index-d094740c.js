@@ -183,7 +183,7 @@ Error generating stack: `+o.message+`
     //border: 2px solid orange;
     width: 100%;
 
-    h1{
+    h2{
         color: #C5C6CE;
         font-family: Inter;
         font-size: 30px;
@@ -231,7 +231,7 @@ Error generating stack: `+o.message+`
 
 
     }
-`;function Om(){return N.jsx(Tm,{children:zm.map(e=>N.jsxs(Rm,{children:[N.jsx(Lm,{children:N.jsx(Im,{src:e.url,alt:e.alt})}),N.jsxs(jm,{children:[N.jsx("h1",{children:`0${e.id+1}`}),N.jsx("h2",{children:e.title}),N.jsx("p",{children:e.preview})]})]},e.id))})}const Dm="/assets/image-web-3-desktop-80273c80.jpg",Mm="/assets/image-web-3-mobile-83b3ba87.jpg",Am=ue.picture`
+`;function Om(){return N.jsx(Tm,{children:zm.map(e=>N.jsxs(Rm,{children:[N.jsx(Lm,{children:N.jsx(Im,{src:e.url,alt:e.alt})}),N.jsxs(jm,{children:[N.jsx("h2",{children:`0${e.id+1}`}),N.jsx("h2",{children:e.title}),N.jsx("p",{children:e.preview})]})]},e.id))})}const Dm="/assets/image-web-3-desktop-80273c80.jpg",Mm="/assets/image-web-3-mobile-83b3ba87.jpg",Am=ue.picture`
     height: 300px;
     width: 100%;
     grid-area: hero;
