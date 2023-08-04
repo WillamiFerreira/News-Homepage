@@ -247,7 +247,7 @@ Error generating stack: `+o.message+`
     width: 100%;
     height: 100%;
     
-`;function Um({id:e}){return N.jsxs(Am,{id:e,role:"hero",children:[N.jsx("source",{media:"(min-width: 668px)",srcSet:Dm,alt:"desktop hero imagem"}),N.jsx(Fm,{src:Mm,alt:"mobile hero imagem"})]})}const Bm=ue.button`
+`;function Um({id:e}){return N.jsxs(Am,{id:e,role:"img",children:[N.jsx("source",{media:"(min-width: 668px)",srcSet:Dm,alt:"desktop hero imagem"}),N.jsx(Fm,{src:Mm,alt:"mobile hero imagem"})]})}const Bm=ue.button`
    padding: 14px 40px;
    text-transform: uppercase;
 
