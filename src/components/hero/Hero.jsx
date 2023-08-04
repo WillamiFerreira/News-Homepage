@@ -8,7 +8,7 @@ import {
 
 function Hero({id}){
     return(
-        <HeroStyled id={id} alt="Banners" >
+        <HeroStyled id={id} >
             <source media="(min-width: 668px)" srcSet={largeHero}  />
             <HeroImageStyled src={tinyHero} alt="mobile hero imagem"/>
         </HeroStyled>
