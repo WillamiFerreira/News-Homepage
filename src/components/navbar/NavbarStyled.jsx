@@ -101,7 +101,7 @@ export const BackgroundNavStyled = styled(NavbarStyled)`
     }
 
 `
-export const MenuToggle = styled.button`
+export const MenuToggle = styled.div`
     position: ${props => props.open ? "absolute" : "relative"};
     top: ${props => props.open ? "34px" : ""};
     right: ${props => props.open ? "20px" : ""};

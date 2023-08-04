@@ -18,7 +18,7 @@ export default function Navbar(){
     return(
         <>        
         <NavbarStyled open={show} >
-            <img id='logo' src={logo} alt="logo" rule="logo" />
+            <img id='logo' src={logo} alt="logo" />
 
             <MenuToggle onClick={toggleMenu} open={show}>
                 <div className="one"></div>

@@ -8,8 +8,8 @@ import {
 
 function Hero({id}){
     return(
-        <HeroStyled id={id} role="img" >
-            <source media="(min-width: 668px)" srcSet={largeHero} alt="desktop hero imagem" />
+        <HeroStyled id={id} alt="Banners" >
+            <source media="(min-width: 668px)" srcSet={largeHero}  />
             <HeroImageStyled src={tinyHero} alt="mobile hero imagem"/>
         </HeroStyled>
     )

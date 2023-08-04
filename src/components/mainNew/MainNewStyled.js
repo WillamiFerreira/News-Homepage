@@ -31,7 +31,7 @@ export const MainNewStyled = styled.div`
 
 
     
-    & > span{
+    & > div{
         //border: 1px solid blue;
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@ export const MainNewStyled = styled.div`
 
 
     ${({theme}) => theme.tablet`
-        & > span > button {
+        & > div > button {
             align-self: flex-start;
             margin-top: 0px;
         }

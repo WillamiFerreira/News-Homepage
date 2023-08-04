@@ -247,7 +247,7 @@ Error generating stack: `+o.message+`
     width: 100%;
     height: 100%;
     
-`;function Um({id:e}){return N.jsxs(Am,{id:e,role:"img",children:[N.jsx("source",{media:"(min-width: 668px)",srcSet:Dm,alt:"desktop hero imagem"}),N.jsx(Fm,{src:Mm,alt:"mobile hero imagem"})]})}const Bm=ue.button`
+`;function Um({id:e}){return N.jsxs(Am,{id:e,alt:"Banners",children:[N.jsx("source",{media:"(min-width: 668px)",srcSet:Dm}),N.jsx(Fm,{src:Mm,alt:"mobile hero imagem"})]})}const Bm=ue.button`
    padding: 14px 40px;
    text-transform: uppercase;
 
@@ -282,7 +282,7 @@ Error generating stack: `+o.message+`
 
 
     
-    & > span{
+    & > div{
         //border: 1px solid blue;
         display: flex;
         flex-direction: column;
@@ -313,7 +313,7 @@ Error generating stack: `+o.message+`
 
 
     ${({theme:e})=>e.tablet`
-        & > span > button {
+        & > div > button {
             align-self: flex-start;
             margin-top: 0px;
         }
@@ -322,7 +322,7 @@ Error generating stack: `+o.message+`
 
 
 
-`;function Wm(){return N.jsxs(Vm,{children:[N.jsx("h1",{children:"The Brinht Future of web 3.0? "}),N.jsxs("span",{children:[N.jsx("p",{children:"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"}),N.jsx(Hm,{children:"read more"})]})]})}const Qm=[{id:0,title:"Hydrogen VS Eletric Cars",description:"Will hydrogen-fueled cars catch up to EVs?"},{id:1,title:"The Downsides of AI Artistry",description:"What are the possible adverse effects of on-demand AI image generation?"},{id:2,title:"Is VC Funding Drying Up?",description:"Private funding by VC firms is down 50% YOY. We take a look at what that means."}],Ym=ue.div`
+`;function Wm(){return N.jsxs(Vm,{children:[N.jsx("h1",{children:"The Brinht Future of web 3.0? "}),N.jsxs("div",{children:[N.jsx("p",{children:"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"}),N.jsx(Hm,{children:"read more"})]})]})}const Qm=[{id:0,title:"Hydrogen VS Eletric Cars",description:"Will hydrogen-fueled cars catch up to EVs?"},{id:1,title:"The Downsides of AI Artistry",description:"What are the possible adverse effects of on-demand AI image generation?"},{id:2,title:"Is VC Funding Drying Up?",description:"Private funding by VC firms is down 50% YOY. We take a look at what that means."}],Ym=ue.div`
     display: flex;
     flex-direction: column;
     //border: 1px solid red;
@@ -392,8 +392,8 @@ Error generating stack: `+o.message+`
         font-weight: 800;
         cursor: pointer;
 
-        :hover{
-            color: hsl(35, 77%, 62%)
+        &:hover{
+            color: hsl(35, 77%, 62%);
         }
 
     }
@@ -501,7 +501,7 @@ Error generating stack: `+o.message+`
 
     }
 
-`;const Zm=ue.button`
+`;const Zm=ue.div`
     position: ${e=>e.open?"absolute":"relative"};
     top: ${e=>e.open?"34px":""};
     right: ${e=>e.open?"20px":""};
@@ -541,7 +541,7 @@ Error generating stack: `+o.message+`
     ${({theme:e})=>e.tablet`
         display: none;
     `}
-`;function Jm(){const[e,t]=tn.useState(!1),n=()=>{t(!e)};return document.body.style.overflow=e?"hidden":"initial",N.jsx(N.Fragment,{children:N.jsxs(qf,{open:e,children:[N.jsx("img",{id:"logo",src:Xm,alt:"logo",rule:"logo"}),N.jsxs(Zm,{onClick:n,open:e,children:[N.jsx("div",{className:"one"}),N.jsx("div",{className:"two"}),N.jsx("div",{className:"three"})]}),N.jsx("nav",{children:N.jsxs("ul",{children:[N.jsx("li",{children:"Home"}),N.jsx("li",{children:"New"}),N.jsx("li",{children:"Popular"}),N.jsx("li",{children:"Treading"}),N.jsx("li",{children:"Categories"})]})})]})})}function qm(){return N.jsxs(ha,{$global:!0,children:[" ",N.jsx(Jm,{}),N.jsxs(ha,{direction:"column",children:[N.jsxs($m,{$main:!0,direction:"column",gap:"32px",place_items:"center",children:[N.jsx(Um,{}),N.jsx(Wm,{}),N.jsx(Gm,{})]}),N.jsx(Om,{})]}),N.jsx("p",{id:"waterMark",children:N.jsxs("i",{children:["Made with 💙 and ☕ by ",N.jsx("a",{target:"_blanck",href:"https://github.com/WillamiFerreira",children:"Gabriel Ferreira"})]})})]})}const bm=Nm`
+`;function Jm(){const[e,t]=tn.useState(!1),n=()=>{t(!e)};return document.body.style.overflow=e?"hidden":"initial",N.jsx(N.Fragment,{children:N.jsxs(qf,{open:e,children:[N.jsx("img",{id:"logo",src:Xm,alt:"logo"}),N.jsxs(Zm,{onClick:n,open:e,children:[N.jsx("div",{className:"one"}),N.jsx("div",{className:"two"}),N.jsx("div",{className:"three"})]}),N.jsx("nav",{children:N.jsxs("ul",{children:[N.jsx("li",{children:"Home"}),N.jsx("li",{children:"New"}),N.jsx("li",{children:"Popular"}),N.jsx("li",{children:"Treading"}),N.jsx("li",{children:"Categories"})]})})]})})}function qm(){return N.jsxs(ha,{$global:!0,children:[" ",N.jsx(Jm,{}),N.jsxs(ha,{direction:"column",children:[N.jsxs($m,{$main:!0,direction:"column",gap:"32px",place_items:"center",children:[N.jsx(Um,{}),N.jsx(Wm,{}),N.jsx(Gm,{})]}),N.jsx(Om,{})]}),N.jsx("p",{id:"waterMark",children:N.jsxs("i",{children:["Made with 💙 and ☕ by ",N.jsx("a",{target:"blanck",href:"https://github.com/WillamiFerreira",children:"Gabriel Ferreira"})]})})]})}const bm=Nm`
     
     * {
         margin: 0;

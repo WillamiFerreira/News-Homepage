@@ -18,7 +18,7 @@ function App() {
         </ComponentWrapper>
         <Articles/>
       </Wrapper>
-      <p id="waterMark" ><i>Made with &#128153; and &#9749; by <a target="_blanck" href="https://github.com/WillamiFerreira">Gabriel Ferreira</a></i></p>
+      <p id="waterMark" ><i>Made with &#128153; and &#9749; by <a target="blanck" href="https://github.com/WillamiFerreira">Gabriel Ferreira</a></i></p>
     </Wrapper>
   )
 }
